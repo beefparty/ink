@@ -14,23 +14,31 @@ h1, h2, h3, h4 {
 	text-transform: uppercase;
 	margin: 0; }
 
-.container {
+#container {
 	padding:25px 0;
+}
+
+/* clearfix */
+#container:after {
+  content: ' ';
+  display: block;
+  clear: both;
 }
 	
 .blog {
-	float:none;
+//	float:none;
 	padding:25px 50px 25px 50px;
 	background:#fef;
+    width: 25%; 
 }
 
 h2 a, h2 a:visited {
 	color:#f9d;
 }
 
-@media all and (min-width: 50em) {
+@media all and (max-width: 50em) {
     .blog {
-        float: left;
-        width: 25%;
+//      float: left;
+        width: 100%;
     }
 }

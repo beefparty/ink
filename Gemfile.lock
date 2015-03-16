@@ -43,7 +43,7 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.7)
     execjs (2.4.0)
-    ffi (1.9.8)
+    ffi (1.9.8-x86-mingw32)
     haml (4.0.6)
       tilt
     hike (1.2.3)
@@ -98,7 +98,7 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.5)
       activesupport (>= 3.1)
-    rack (1.6.0)
+    rack (1.5.2)
     rack-livereload (0.3.15)
       rack
     rack-test (0.6.3)

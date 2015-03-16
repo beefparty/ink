@@ -4,7 +4,7 @@ date: 2012-01-02
 tags: example
 ---
 
-This is a second example.
+# This is a second example.
 
 ### This is *bongos*, indeed.
 
