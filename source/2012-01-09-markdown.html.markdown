@@ -6,6 +6,6 @@ tags: example
 
 #What
 
-~~Here~~ we go then.
+~~Here~~ we go then?
 
 [I'm an inline-style link](https://www.google.com)
