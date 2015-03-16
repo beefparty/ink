@@ -2,6 +2,7 @@
 title: Markdown
 date: 2012-01-09
 tags: example
+header_image: https://placekitten.com/g/250/300
 ---
 
 #What

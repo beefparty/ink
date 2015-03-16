@@ -15,6 +15,7 @@
   
   <body class="<%= page_classes %>">
   BLOG
-    <%= yield %>
+	<%= image_tag current_article.data['header_image'] %>
+	<%= yield %>
   </body>
 </html>

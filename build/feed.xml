@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2015-03-17T10:31:00+13:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>test1</title>
+    <link rel="alternate" href="http://blog.url.com/test1/"/>
+    <id>http://blog.url.com/test1/</id>
+    <published>2015-03-17T10:31:00+13:00</published>
+    <updated>2015-03-17T11:02:11+13:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html"></content>
+  </entry>
+  <entry>
+    <title>testing</title>
+    <link rel="alternate" href="http://blog.url.com/testing/"/>
+    <id>http://blog.url.com/testing/</id>
+    <published>2015-03-16T13:00:00+13:00</published>
+    <updated>2015-03-17T11:02:13+13:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html"></content>
+  </entry>
+  <entry>
+    <title>test3</title>
+    <link rel="alternate" href="http://blog.url.com/test4/"/>
+    <id>http://blog.url.com/test4/</id>
+    <published>2015-03-16T13:00:00+13:00</published>
+    <updated>2015-03-17T11:02:01+13:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html"></content>
+  </entry>
+  <entry>
+    <title>test3</title>
+    <link rel="alternate" href="http://blog.url.com/test3/"/>
+    <id>http://blog.url.com/test3/</id>
+    <published>2015-03-16T13:00:00+13:00</published>
+    <updated>2015-03-17T11:02:05+13:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html"></content>
+  </entry>
+  <entry>
+    <title>test2</title>
+    <link rel="alternate" href="http://blog.url.com/test2/"/>
+    <id>http://blog.url.com/test2/</id>
+    <published>2015-03-16T13:00:00+13:00</published>
+    <updated>2015-03-17T11:02:07+13:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html"></content>
+  </entry>
+  <entry>
+    <title>test2</title>
+    <link rel="alternate" href="http://blog.url.com/test7/"/>
+    <id>http://blog.url.com/test7/</id>
+    <published>2015-03-16T13:00:00+13:00</published>
+    <updated>2015-03-17T11:01:58+13:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html"></content>
+  </entry>
+</feed>
