@@ -1,6 +1,6 @@
 ---
-title: test2
-tags:
-header_image: https://placekitten.com/g/200/154
+title: testtest
+tags: wide
+header_image: https://placekitten.com/g/630/400
 ---
 

@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700)
+@import url(http://fonts.googleapis.com/css?family=Paytone+One)
+
+$maincolor: #eee
+$bgcolor: #444
+$linkcolor: #f9d
+$turq: #32fe77
+$cornercolor: white
+
+$font-mont: 'Montserrat', sans-serif 
+
+body 
+  background: #444
+  padding: 0
+  margin: 0
+  font-family: $font-mont
+  font-size: 12px
+
+h1, h2, h3, h4 
+  color: rgba(0, 0, 0, .3)
+  font-weight: bold
+  text-transform: uppercase
+  margin: 0 
+
+#container 
+  padding: 25px
+  transition : padding .4s
+
+
+/* clearfix */
+#container:after 
+  content: ' '
+  display: block
+  clear: both
+
+  
+.blog 
+  background: $maincolor
+  width: 300px 
+  box-sizing: border-box
+  position: relative
+
+  .content 
+    padding: 20px
+
+.blog::after 
+  width: 0px
+  height: 0px
+  background: $bgcolor
+  content: ''
+  position: absolute
+  bottom: 0
+  left: 0
+  border-top: 10px solid $cornercolor
+  border-right: 10px solid $cornercolor
+  border-left: 10px solid $bgcolor
+  border-bottom: 10px solid $bgcolor
+    
+.head 
+  background: $turq
+  
+.foot 
+  background: $turq
+
+.head h1 
+  color: #fff
+  
+.wide 
+  width: 630px
+
+.single.blog
+  margin-top: 30px
+  width: 630px
+
+h2 a, h2 a:visited 
+  color: $turq
+
+
+@media all and (max-width: 610px) 
+  .single .blog, .blog
+    width: 100% 
+    box-sizing: border-box
+  
+  #container 
+    padding: 0
+    width: 100%

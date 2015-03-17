@@ -1,0 +1,82 @@
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700)
+
+body {
+  background: #444;
+  padding:0;
+  margin:0;
+  font-family: 'Montserrat',sans-serif; }
+
+h1, h2, h3, h4 {
+  color: rgba(0, 0, 0, .3);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0; }
+
+#container {
+  padding:25px;
+}
+
+/* clearfix */
+#container:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+  
+.blog {
+/*  float:none; */
+//  padding:25px;
+  background:#fef;
+  width: 300px; 
+  box-sizing: border-box;
+}
+
+.blog::after {
+  width: 0px;
+  height: 0px;
+  background: #fff;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 10px solid lightblue;
+  border-right: 10px solid lightblue;
+  border-left: 10px solid #444;
+  border-bottom: 10px solid #444;
+}
+
+.blog .content {
+  padding: 20px;
+}
+
+.blog.wide {
+  width: 630px;
+}
+
+.blog.head {
+  background:#21245d;
+}
+
+.blog.foot {
+  background:#32fe77;
+}
+
+.blog.head h1 {
+  color:#fff;
+}
+
+h2 a, h2 a:visited {
+  color:#f9d;
+}
+
+@media all and (max-width: 500px) {
+  .blog {
+  //    float: left;
+  width: 100%; 
+  box-sizing: border-box;
+  }
+  #container {
+  padding:0;
+  }
+}

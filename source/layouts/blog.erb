@@ -1,21 +1,12 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
-    
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
-  </head>
-  
-  <body class="<%= page_classes %>">
-  BLOG
-	<%= image_tag current_article.data['header_image'] %>
-	<%= yield %>
+<%= partial "header" %>
+
+<div id="container">
+
+<div class="blog head wide"><div class="content">
+  <h1>HELLO</h1></div></div>
+ 
+  <div class="blog single"><%= image_tag current_article.data['header_image'], :width => '100%', :class => 'header_image' %><div class="content">
+	<h3><%= current_article.title %></h3><%= yield %></div></div>
+	
   </body>
 </html>

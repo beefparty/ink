@@ -145,4 +145,5 @@ DEPENDENCIES
   middleman-livereload!
   nokogiri
   redcarpet (~> 2.3.0)
+  sass (~> 3.4.13)
   tzinfo-data

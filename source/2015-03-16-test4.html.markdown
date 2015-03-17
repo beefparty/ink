@@ -1,6 +1,5 @@
 ---
-title: test3
+title: test4 no image
 tags:
-header_image: https://placekitten.com/g/200/152
 ---
 
