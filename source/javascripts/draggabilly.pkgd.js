@@ -2250,4 +2250,3 @@ if ( jQuery && jQuery.bridget ) {
 return Draggabilly;
 
 }));
-

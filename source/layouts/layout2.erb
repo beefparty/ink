@@ -9,9 +9,9 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
 
-    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= stylesheet_link_tag "normalize", "all", "layout2" %>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <%= javascript_include_tag "draggabilly.pkgd.js", "packery.pkgd.js" %>
+    <%= javascript_include_tag "packery.pkgd.min.js", "draggabilly.pkgd.min.js" %>
   </head>
 
   <body class="<%= page_classes %>">

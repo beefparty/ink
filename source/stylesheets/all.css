@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 body {
-	background: #f3f3f3);
+	background:#fef;
 	padding:0;
 	margin:0;
 	font-family: 'Montserrat',sans-serif; }
@@ -25,11 +25,11 @@ h1, h2, h3, h4 {
   clear: both;
 }
 	
-.blog {
+.item {
+    background:white;
 //	float:none;
 	padding:25px 50px 25px 50px;
-	background:#fef;
-    width: 25%; 
+    width: 250px; 
 }
 
 h2 a, h2 a:visited {
@@ -37,8 +37,15 @@ h2 a, h2 a:visited {
 }
 
 @media all and (max-width: 50em) {
-    .blog {
+    .item {
 //      float: left;
         width: 100%;
     }
+}
+
+.item.is-dragging,
+.item.is-positioning-post-drag {
+  border-color: white;
+  background: #09F;
+  z-index: 2;
 }
