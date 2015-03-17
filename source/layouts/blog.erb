@@ -1,10 +1,5 @@
 <%= partial "header" %>
 
-<div id="container">
-
-<div class="blog head wide"><div class="content">
-  <h1>HELLO</h1></div></div>
- 
   <div class="blog single"><%= image_tag current_article.data['header_image'], :width => '100%', :class => 'header_image' %><div class="content">
 	<h3><%= current_article.title %></h3><%= yield %></div></div>
 	
