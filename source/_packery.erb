@@ -1,11 +1,49 @@
 </div>
 
 <script>
-var $container = $('#container');
-// init
-$container.packery({
-  itemSelector: '.blog',
-  gutter: 30
+docReady( function() {
+
+  var container = document.querySelector('#container');
+  var shufButton = document.querySelector('.shuf-button');
+
+  var pckry = new Packery( container, {
+    itemSelector: '.blog',
+    gutter: 30
+  });
+
+  // shuffle everything but the non-shufflers
+  var shufflers = [];
+  var nonShufflers = [];
+  for ( var i=0, len = pckry.items.length; i < len; i++ ) {
+    var item = pckry.items[i];
+    var collection = classie.has( item.element, 'ignore-shuffle' ) ?
+      nonShufflers : shufflers;
+    collection.push( item );
+  }
+
+  shufflers.sort( function() {
+    return Math.random() > 0.5;
+  });
+  pckry.items = nonShufflers.concat( shufflers );
+  pckry.layout();
+  
+  shufButton.onclick = function() {
+    var shufflers = [];
+    var nonShufflers = [];
+    for ( var i=0, len = pckry.items.length; i < len; i++ ) {
+      var item = pckry.items[i];
+      var collection = classie.has( item.element, 'ignore-shuffle' ) ?
+        nonShufflers : shufflers;
+      collection.push( item );
+    }
+
+    shufflers.sort( function() {
+      return Math.random() > 0.5;
+    });
+    pckry.items = nonShufflers.concat( shufflers );
+    pckry.layout();
+  };
+
 });
 </script>
 	
