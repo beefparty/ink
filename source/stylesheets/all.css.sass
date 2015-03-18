@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700)
-@import url(http://fonts.googleapis.com/css?family=Paytone+One)
 
 $maincolor: #eee
 $bgcolor: #444
@@ -33,7 +32,6 @@ h1, h2, h3, h4
   display: block
   clear: both
 
-  
 .blog 
   background: $maincolor
   width: 300px 
@@ -56,15 +54,43 @@ h1, h2, h3, h4
   border-left: 10px solid $bgcolor
   border-bottom: 10px solid $bgcolor
     
+
+.blog.page
+  height: 300px
+  line-height: 300px
+
+.blog.nav
+  height: 100px
+  line-height: 100px
+  
+.blog.page, .blog.nav
+  text-align: center
+  
+  a, a:visited
+    display: block
+    text-decoration: none
+    color: $cornercolor
+    
+  a:hover
+    background: $turq
+    color: $bgcolor
+
+  a:active
+    background: $linkcolor
+    
 .head 
-  background: $turq
+  background: url(http://www.freelives.net/templates/freelives23/images/page.gif)
+  
+  a h1
+    display: block
+    height: 30px
+    padding: 30px
+    color: #fff
+    text-decoration: underline    
   
 .foot 
   background: $turq
 
-.head h1 
-  color: #fff
-  
 .wide 
   width: 630px
 
@@ -77,12 +103,13 @@ h2 a, h2 a:visited
 
 button.shuf-button
   width: 100%
-  height: 250px
+  height: 300px
   background: $turq
   border: none
   color: $cornercolor
   text-transform: uppercase
   font-size: 32px
+  text-decoration: underline
 
 button.shuf-button:hover
   background: $linkcolor

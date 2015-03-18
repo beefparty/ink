@@ -1,6 +1,6 @@
 ---
 title: testtest
-tags: wide
+tags: audio
 header_image: https://placekitten.com/g/630/400
 ---
 

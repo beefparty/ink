@@ -1,38 +1,42 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Paytone+One);
-/* line 9, C:/Users/yoyoyo/Documents/GitHub/ink/source/stylesheets/all.css.sass */
+/* line 11, C:/git/ink/source/stylesheets/all.css.sass */
 body {
   background: #444;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px; }
 
-/* line 15, C:/Users/yoyoyo/Documents/GitHub/ink/source/stylesheets/all.css.sass */
+/* line 18, C:/git/ink/source/stylesheets/all.css.sass */
 h1, h2, h3, h4 {
   color: rgba(0, 0, 0, 0.3);
   font-weight: bold;
   text-transform: uppercase;
-  margin: 0;
-  font-family: "Paytone One", sans-serif; }
+  margin: 0; }
 
-/* line 22, C:/Users/yoyoyo/Documents/GitHub/ink/source/stylesheets/all.css.sass */
+/* line 24, C:/git/ink/source/stylesheets/all.css.sass */
 #container {
-  padding: 25px; }
+  padding: 25px;
+  transition: padding 0.4s; }
 
 /* clearfix */
-/* line 27, C:/Users/yoyoyo/Documents/GitHub/ink/source/stylesheets/all.css.sass */
+/* line 30, C:/git/ink/source/stylesheets/all.css.sass */
 #container:after {
   content: " ";
   display: block;
   clear: both; }
 
-/* line 33, C:/Users/yoyoyo/Documents/GitHub/ink/source/stylesheets/all.css.sass */
+/* line 35, C:/git/ink/source/stylesheets/all.css.sass */
 .blog {
-  background: #fef;
+  background: #eee;
   width: 300px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
+  /* line 41, C:/git/ink/source/stylesheets/all.css.sass */
+  .blog .content {
+    padding: 20px; }
 
-/* line 39, C:/Users/yoyoyo/Documents/GitHub/ink/source/stylesheets/all.css.sass */
+/* line 44, C:/git/ink/source/stylesheets/all.css.sass */
 .blog::after {
   width: 0px;
   height: 0px;
@@ -41,41 +45,78 @@ h1, h2, h3, h4 {
   position: absolute;
   bottom: 0;
   left: 0;
-  border-top: 10px solid #fef;
-  border-right: 10px solid #fef;
+  border-top: 10px solid white;
+  border-right: 10px solid white;
   border-left: 10px solid #444;
   border-bottom: 10px solid #444; }
 
-/* line 53, C:/Users/yoyoyo/Documents/GitHub/ink/source/stylesheets/all.css.sass */
-.blog .content {
-  padding: 20px; }
+/* line 57, C:/git/ink/source/stylesheets/all.css.sass */
+.blog.page {
+  height: 300px;
+  text-align: center;
+  line-height: 300px; }
+  /* line 62, C:/git/ink/source/stylesheets/all.css.sass */
+  .blog.page a, .blog.page a:visited {
+    display: block;
+    text-decoration: none; }
+  /* line 66, C:/git/ink/source/stylesheets/all.css.sass */
+  .blog.page a:hover {
+    background: #32fe77;
+    color: #444; }
+  /* line 70, C:/git/ink/source/stylesheets/all.css.sass */
+  .blog.page a:active {
+    background: #f9d; }
 
-/* line 57, C:/Users/yoyoyo/Documents/GitHub/ink/source/stylesheets/all.css.sass */
-.blog.wide {
-  width: 630px; }
-
-/* line 61, C:/Users/yoyoyo/Documents/GitHub/ink/source/stylesheets/all.css.sass */
-.blog.head {
-  background: #21245d; }
-
-/* line 65, C:/Users/yoyoyo/Documents/GitHub/ink/source/stylesheets/all.css.sass */
-.blog.foot {
+/* line 73, C:/git/ink/source/stylesheets/all.css.sass */
+.head {
   background: #32fe77; }
 
-/* line 69, C:/Users/yoyoyo/Documents/GitHub/ink/source/stylesheets/all.css.sass */
-.blog.head h1 {
+/* line 76, C:/git/ink/source/stylesheets/all.css.sass */
+.foot {
+  background: #32fe77; }
+
+/* line 79, C:/git/ink/source/stylesheets/all.css.sass */
+.head h1 {
   color: #fff; }
 
-/* line 73, C:/Users/yoyoyo/Documents/GitHub/ink/source/stylesheets/all.css.sass */
+/* line 82, C:/git/ink/source/stylesheets/all.css.sass */
+.wide {
+  width: 630px; }
+
+/* line 85, C:/git/ink/source/stylesheets/all.css.sass */
+.single.blog {
+  margin-top: 30px;
+  width: 630px; }
+
+/* line 89, C:/git/ink/source/stylesheets/all.css.sass */
 h2 a, h2 a:visited {
   color: #32fe77; }
 
-@media all and (max-width: 500px) {
-  /* line 78, C:/Users/yoyoyo/Documents/GitHub/ink/source/stylesheets/all.css.sass */
-  .blog {
+/* line 92, C:/git/ink/source/stylesheets/all.css.sass */
+button.shuf-button {
+  width: 100%;
+  height: 300px;
+  background: #32fe77;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 32px; }
+
+/* line 101, C:/git/ink/source/stylesheets/all.css.sass */
+button.shuf-button:hover {
+  background: #f9d; }
+
+/* line 104, C:/git/ink/source/stylesheets/all.css.sass */
+button.shuf-button:active {
+  background: #444; }
+
+@media all and (max-width: 610px) {
+  /* line 108, C:/git/ink/source/stylesheets/all.css.sass */
+  .single .blog, .blog {
     width: 100%;
     box-sizing: border-box; }
 
-  /* line 82, C:/Users/yoyoyo/Documents/GitHub/ink/source/stylesheets/all.css.sass */
+  /* line 112, C:/git/ink/source/stylesheets/all.css.sass */
   #container {
-    padding: 0; } }
+    padding: 0;
+    width: 100%; } }

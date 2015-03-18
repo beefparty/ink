@@ -15,32 +15,76 @@
 	
     <script src="../../javascripts/packery.pkgd.js" type="text/javascript"></script>
   </head>
-  
-  <body class="x2015 x2015_03 x2015_03_index">
+
+<body class="x2015 x2015_03 x2015_03_index">
+
+<div id="container">
+
+<div class="blog head wide"><div class="content">
+  <h1>HELLO</h1></div></div>
+
     <h1>Archive for
     Mar 2015
 </h1>
 
 
 <ul>
-    <li><a href="/test1/">test1</a> <span>Mar 16</span></li>
-    <li><a href="/testing/">testing</a> <span>Mar 16</span></li>
-    <li><a href="/test4/">test3</a> <span>Mar 16</span></li>
-    <li><a href="/test3/">test3</a> <span>Mar 16</span></li>
-    <li><a href="/test2/">testtest</a> <span>Mar 16</span></li>
-    <li><a href="/test7/">test2</a> <span>Mar 16</span></li>
+    <li><a href="/soundcloud/">Soundcloud</a> <span>Mar 17</span></li>
+    <li><a href="/parallelteeth/">PARALLEL TEETH</a> <span>Mar 16</span></li>
+    <li><a href="/quote/">testing</a> <span>Mar 16</span></li>
+    <li><a href="/contact/">contact</a> <span>Mar 16</span></li>
 </ul>
 
 
 
+</div>
+
 <script>
-var $container = $('#container');
-// init
-$container.packery({
-  itemSelector: '.blog',
-  gutter: 30
+docReady( function() {
+
+  var container = document.querySelector('#container');
+  var shufButton = document.querySelector('.shuf-button');
+
+  var pckry = new Packery( container, {
+    itemSelector: '.blog',
+    gutter: 30
+  });
+
+  // shuffle everything but the non-shufflers
+  var shufflers = [];
+  var nonShufflers = [];
+  for ( var i=0, len = pckry.items.length; i < len; i++ ) {
+    var item = pckry.items[i];
+    var collection = classie.has( item.element, 'ignore-shuffle' ) ?
+      nonShufflers : shufflers;
+    collection.push( item );
+  }
+
+  shufflers.sort( function() {
+    return Math.random() > 0.5;
+  });
+  pckry.items = nonShufflers.concat( shufflers );
+  pckry.layout();
+  
+  shufButton.onclick = function() {
+    var shufflers = [];
+    var nonShufflers = [];
+    for ( var i=0, len = pckry.items.length; i < len; i++ ) {
+      var item = pckry.items[i];
+      var collection = classie.has( item.element, 'ignore-shuffle' ) ?
+        nonShufflers : shufflers;
+      collection.push( item );
+    }
+
+    shufflers.sort( function() {
+      return Math.random() > 0.5;
+    });
+    pckry.items = nonShufflers.concat( shufflers );
+    pckry.layout();
+  };
+
 });
 </script>
-
+	
   </body>
 </html>

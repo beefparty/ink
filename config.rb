@@ -16,7 +16,7 @@ activate :blog do |blog|
   blog.permalink = "{title}.html"
   # Matcher for blog source files
   # blog.sources = "{year}-{month}-{day}-{title}.html"
-  # blog.taglink = "tags/{tag}.html"
+  blog.taglink = "tag/{tag}.html"
   blog.layout = "blog"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
@@ -32,6 +32,14 @@ activate :blog do |blog|
   blog.paginate = true
   blog.per_page = 50
   # blog.page_link = "page/{num}"
+  
+  blog.custom_collections = {
+    category: {
+      link: '/cat/{category}.html',
+      template: '/category.html'
+    }
+  }
+  
 end
 
 page "/feed.xml", layout: false
@@ -69,6 +77,17 @@ page "/feed.xml", layout: false
 ###
 # Helpers
 ###
+
+helpers do
+  def build_categories(articles)
+    categories = []
+    articles.each do |article|
+      category = article.metadata[:page]['category']
+      categories.push(category) unless categories.include? category
+    end
+    return categories
+  end
+end
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
@@ -108,3 +127,9 @@ configure :build do
 end
 
 activate :directory_indexes
+
+# ["audio", "dick", "harry"].each do |category|
+#   proxy "/#{category}.html", "/category.html", :locals => { :person_name => category }, :ignore => true
+# end
+
+

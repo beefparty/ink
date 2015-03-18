@@ -45,7 +45,7 @@ per_page: 25
     <% end %>
     <div class="content">
     <% if article.data['category'] != "quote" %>
-      <h2><%= link_to article.title, article %> <!--<span><%= article.date.strftime('%b %e') %></span>--></h2>
+      <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
     <% end %>
     <%= article.summary(250) %></div>
     <% end %>

@@ -5,74 +5,68 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-03-17T10:31:00+13:00</updated>
+  <updated>2015-03-17T13:00:00+13:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
   <entry>
-    <title>test1</title>
-    <link rel="alternate" href="http://blog.url.com/test1/"/>
-    <id>http://blog.url.com/test1/</id>
-    <published>2015-03-17T10:31:00+13:00</published>
-    <updated>2015-03-17T11:02:11+13:00</updated>
+    <title>Soundcloud</title>
+    <link rel="alternate" href="http://blog.url.com/soundcloud/"/>
+    <id>http://blog.url.com/soundcloud/</id>
+    <published>2015-03-17T13:00:00+13:00</published>
+    <updated>2015-03-18T19:40:28+13:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html"></content>
+    <content type="html">&lt;p&gt;Audio desc.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>PARALLEL TEETH</title>
+    <link rel="alternate" href="http://blog.url.com/parallelteeth/"/>
+    <id>http://blog.url.com/parallelteeth/</id>
+    <published>2015-03-16T13:00:00+13:00</published>
+    <updated>2015-03-18T18:24:06+13:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;WHATTTT&lt;/p&gt;
+</content>
   </entry>
   <entry>
     <title>testing</title>
-    <link rel="alternate" href="http://blog.url.com/testing/"/>
-    <id>http://blog.url.com/testing/</id>
+    <link rel="alternate" href="http://blog.url.com/quote/"/>
+    <id>http://blog.url.com/quote/</id>
     <published>2015-03-16T13:00:00+13:00</published>
-    <updated>2015-03-17T11:02:13+13:00</updated>
+    <updated>2015-03-18T18:08:40+13:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html"></content>
+    <content type="html">&lt;p&gt;WHATTTT&lt;/p&gt;
+</content>
   </entry>
   <entry>
-    <title>test3</title>
-    <link rel="alternate" href="http://blog.url.com/test4/"/>
-    <id>http://blog.url.com/test4/</id>
+    <title>contact</title>
+    <link rel="alternate" href="http://blog.url.com/contact/"/>
+    <id>http://blog.url.com/contact/</id>
     <published>2015-03-16T13:00:00+13:00</published>
-    <updated>2015-03-17T11:02:01+13:00</updated>
+    <updated>2015-03-18T18:27:10+13:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html"></content>
+    <content type="html">&lt;p&gt;WHATTTT&lt;/p&gt;
+</content>
   </entry>
   <entry>
-    <title>test3</title>
-    <link rel="alternate" href="http://blog.url.com/test3/"/>
-    <id>http://blog.url.com/test3/</id>
-    <published>2015-03-16T13:00:00+13:00</published>
-    <updated>2015-03-17T11:02:05+13:00</updated>
+    <title>Example Article</title>
+    <link rel="alternate" href="http://blog.url.com/examplearticle/"/>
+    <id>http://blog.url.com/examplearticle/</id>
+    <published>2012-01-01T13:00:00+13:00</published>
+    <updated>2015-03-18T18:06:14+13:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html"></content>
-  </entry>
-  <entry>
-    <title>testtest</title>
-    <link rel="alternate" href="http://blog.url.com/test2/"/>
-    <id>http://blog.url.com/test2/</id>
-    <published>2015-03-16T13:00:00+13:00</published>
-    <updated>2015-03-17T12:21:26+13:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html"></content>
-  </entry>
-  <entry>
-    <title>test2</title>
-    <link rel="alternate" href="http://blog.url.com/test7/"/>
-    <id>http://blog.url.com/test7/</id>
-    <published>2015-03-16T13:00:00+13:00</published>
-    <updated>2015-03-17T11:01:58+13:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html"></content>
+    <content type="html">&lt;p&gt;This is an example article. You probably want to delete it and write your own articles! This is an example article. You probably want to delete it and write your own articles! This is an example article. You probably want to delete it and write your own articles! This is an example article. You probably want to delete it and write your own articles! This is an example article. You probably want to delete it and write your own articles! &lt;/p&gt;
+</content>
   </entry>
 </feed>
