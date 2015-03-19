@@ -5,11 +5,13 @@ $bgcolor: #444
 $linkcolor: #f9d
 $turq: #32fe77
 $cornercolor: white
+$blue: #35F2DF
+$pink: #ED3293
 
 $font-mont: 'Montserrat', sans-serif 
 
 body 
-  background: #444
+  background: $maincolor
   padding: 0
   margin: 0
   font-family: $font-mont
@@ -22,7 +24,7 @@ h1, h2, h3, h4
   margin: 0 
 
 #container 
-  padding: 25px
+  padding: 0px
   transition : padding .4s
 
 
@@ -34,14 +36,14 @@ h1, h2, h3, h4
 
 .blog 
   background: $maincolor
-  width: 300px 
+  width: 25% 
   box-sizing: border-box
   position: relative
 
   .content 
     padding: 20px
 
-.blog::after 
+/*.blog::after 
   width: 0px
   height: 0px
   background: $bgcolor
@@ -52,16 +54,18 @@ h1, h2, h3, h4
   border-top: 10px solid $cornercolor
   border-right: 10px solid $cornercolor
   border-left: 10px solid $bgcolor
-  border-bottom: 10px solid $bgcolor
+  border-bottom: 10px solid $bgcolor*/
     
 
 .blog.page
   height: 300px
   line-height: 300px
+  background: $pink
 
 .blog.nav
   height: 100px
   line-height: 100px
+  background: $blue
   
 .blog.page, .blog.nav
   text-align: center
@@ -92,7 +96,7 @@ h1, h2, h3, h4
   background: $turq
 
 .wide 
-  width: 630px
+  width: 50%
 
 .single.blog
   margin-top: 30px
@@ -117,11 +121,27 @@ button.shuf-button:hover
 button.shuf-button:active
   background: $bgcolor
   
-@media all and (max-width: 610px) 
+@media all and (max-width: 500px) 
   .single .blog, .blog
     width: 100% 
     box-sizing: border-box
   
   #container 
     padding: 0
+    width: 100%
+
+@media all and (min-width: 650px) and (max-width: 900px) 
+  .single .blog, .blog 
+    width: 33.3% 
+    box-sizing: border-box
+    
+  .wide 
+    width: 66.6%
+
+@media all and (min-width: 500px) and (max-width: 650px) 
+  .single .blog, .blog 
+    width: 50% 
+    box-sizing: border-box
+  
+  .wide 
     width: 100%

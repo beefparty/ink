@@ -127,6 +127,7 @@ configure :build do
 end
 
 activate :directory_indexes
+set :relative_links, true
 
 # ["audio", "dick", "harry"].each do |category|
 #   proxy "/#{category}.html", "/category.html", :locals => { :person_name => category }, :ignore => true
